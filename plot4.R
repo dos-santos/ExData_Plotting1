@@ -1,5 +1,8 @@
+# perepare data
+#download data if necessary
 source("prepareData.R")
 
+#plot plot4.png
 doPlot4 <- function() {
         tbl <- prepareData()
         png(filename = "plot4.png", width = 480, height = 480, units = "px")
