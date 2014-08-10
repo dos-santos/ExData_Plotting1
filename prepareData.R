@@ -25,5 +25,5 @@ prepareData <- function() {
                 df$DateTime <- strptime(paste(df$Date, df$Time), "%d/%m/%Y %H:%M:%S")
                 write.csv(df, cacheFile)
         }
-        tbl
+        df
 }
